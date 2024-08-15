@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App Homepage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="homepage d-flex align-items-center justify-content-center">
+        <div class="container text-center bg-light p-4 rounded shadow">
+            <h1 class="display-3 mb-4 heading-pink">Welcome to the Music App!</h1>
+            <div class="row">
+                <!-- Recommendation Form -->
+                <div class="col-md-4 mb-4">
+                    <div class="recommendation-form">
+                        <h2 class="display-4 mb-4 heading-purple">Find Your Perfect Genre</h2>
+                        <form id="genre-form">
+                            <div class="mb-3">
+                                <label for="mood" class="form-label">What's your current mood?</label>
+                                <select id="mood" class="form-select">
+                                    <option value="happy">Happy</option>
+                                    <option value="sad">Sad</option>
+                                    <option value="energetic">Energetic</option>
+                                    <option value="chill">Chill</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="activity" class="form-label">What are you doing?</label>
+                                <select id="activity" class="form-select">
+                                    <option value="working">Working</option>
+                                    <option value="exercising">Exercising</option>
+                                    <option value="relaxing">Relaxing</option>
+                                    <option value="partying">Partying</option>
+                                </select>
+                            </div>
+                            <button type="button" class="btn btn-pink w-100" onclick="recommendGenre()">Find My Genre</button>
+                        </form>
+                        <div id="genre-result" class="mt-4"></div>
+                    </div>
+                </div>
+
+                <!-- Playlist Section -->
+                <div class="col-md-8 mb-4">
+                    <div class="playlist">
+                        <h2 class="display-4 mb-4 heading-purple">Popular Playlists</h2>
+                        <div class="row playlist-grid">
+                            <!-- Playlist Items -->
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <a href="nowplaying.html" class="playlist-item">
+                                    <img src="images/img7.jpg" alt="Playlist 1" class="img-fluid">
+                                    <p class="playlist-title">Pop Hits</p>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <a href="nowplaying.html" class="playlist-item">
+                                    <img src="images/img4.jpg" alt="Playlist 2" class="img-fluid">
+                                    <p class="playlist-title">Top 40</p>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <a href="nowplaying.html" class="playlist-item">
+                                    <img src="images/img2.jpg" alt="Playlist 3" class="img-fluid">
+                                    <p class="playlist-title">Chill Vibes</p>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <a href="nowplaying.html" class="playlist-item">
+                                    <img src="images/img5.jpg" alt="Playlist 4" class="img-fluid">
+                                    <p class="playlist-title">Summer Jams</p>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <a href="nowplaying.html" class="playlist-item">
+                                    <img src="images/imgb.jpg" alt="Playlist 5" class="img-fluid">
+                                    <p class="playlist-title">EDM Favorites</p>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <a href="nowplaying.html" class="playlist-item">
+                                    <img src="images/img9.jpg" alt="Playlist 6" class="img-fluid">
+                                    <p class="playlist-title">Indie Favorites</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sign Up Button -->
+    <div class="fixed-bottom">
+        <button type="button" class="btn btn-pink">
+            Sign Up
+        </button>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

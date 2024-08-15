@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Now Playing - Music App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nowplaying d-flex">
+        <aside class="sidebar bg-light p-4">
+            <h2 class="heading-purple">Recommended For You</h2>
+            <div class="recommendations">
+                <div class="recommendation-item">
+                    <h3 class="playlist-title">Chill Beats</h3>
+                    <p class="genre">Genre: Chill / Ambient</p>
+                    <p class="description">Relax with some mellow beats perfect for winding down.</p>
+                    <p class="artists">Artists: Bon Iver, Tycho, ODESZA</p>
+                </div>
+                <div class="recommendation-item">
+                    <h3 class="playlist-title">Dance Party</h3>
+                    <p class="genre">Genre: Dance / EDM</p>
+                    <p class="description">Get the party started with high-energy dance tracks.</p>
+                    <p class="artists">Artists: Calvin Harris, David Guetta, The Chainsmokers</p>
+                </div>
+                <div class="recommendation-item">
+                    <h3 class="playlist-title">Indie Hits</h3>
+                    <p class="genre">Genre: Indie / Alternative</p>
+                    <p class="description">Discover the latest and greatest in indie music.</p>
+                    <p class="artists">Artists: Tame Impala, Arctic Monkeys, Vampire Weekend</p>
+                </div>
+                <div class="recommendation-item">
+                    <h3 class="playlist-title">Top 90s</h3>
+                    <p class="genre">Genre: 90s Pop / Rock</p>
+                    <p class="description">Relive the hits of the 90s with this nostalgic playlist.</p>
+                    <p class="artists">Artists: Nirvana, Spice Girls, Oasis</p>
+                </div>
+                <div class="recommendation-item">
+                    <h3 class="playlist-title">Acoustic Favorites</h3>
+                    <p class="genre">Genre: Acoustic / Folk</p>
+                    <p class="description">Enjoy soothing acoustic tracks and folk tunes.</p>
+                    <p class="artists">Artists: Ed Sheeran, James Taylor, Mumford & Sons</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content flex-grow-1 p-4 d-flex flex-column align-items-center">
+            <!-- Song Details and Album Art -->
+            <div class="song-details text-center mb-4">
+                <img src="images/img0.jpg" alt="Album Art" class="img-fluid album-art">
+                <h2 class="song-title mt-3">Campfire Song</h2>
+                <p class="song-artist">Spongebob Squarepants</p>
+            </div>
+            
+            <!-- Progress Bar -->
+            <div class="progress-bar-container w-75 mb-4">
+                <input type="range" class="form-range" id="progress-bar" min="0" max="100" value="0" step="1">
+            </div>
+            
+            <!-- Playback Controls -->
+            <div class="controls d-flex align-items-center justify-content-center mb-4">
+                <button class="btn-custom" id="prev-button">⏮️</button>
+                <button class="btn-custom" id="play-pause-button">▶️</button>
+                <button class="btn-custom" id="next-button">⏭️</button>
+            </div>
+            
+            <!-- Playlist Overview -->
+            <div class="playlist-overview w-75">
+                <h2 class="heading-purple mb-4">Popular Songs</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Yes and? - Ariana Grande</li>
+                    <li class="list-group-item">Delilah - Fred Again..</li>
+                    <li class="list-group-item">Baby - Justin Bieber</li>
+                    <li class="list-group-item">My Bad - The Chainsmokers</li>
+                    <li class="list-group-item">Neverender - Justice & Tame Impala</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+         <!-- Floating Back Button -->
+    <div class="floating-back-button d-none">
+        <a href="index.html" class="btn btn-back">Back to Home</a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

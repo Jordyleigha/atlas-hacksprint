@@ -1,0 +1,362 @@
+/* Reset margins and paddings */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif; /* Base font for professionalism */
+}
+
+/* Full-screen gradient background */
+.homepage {
+    background: linear-gradient(to top, #e0c3fc, #8ec5fc); /* Soft gradient */
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Ensure content flows vertically */
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Ensure proper layout positioning */
+}
+
+.playlist-container {
+    margin-bottom: 80px; /* Adjust this value to fit the height of the sign-up button */
+    width: 100%;
+}
+
+
+/* Heading Styles */
+.heading-pink {
+    color: #FF69B4; /* Light pink for main headings */
+}
+
+.heading-purple {
+    color: #A25092; /* Purple for subheadings */
+}
+
+h1, h2 {
+    font-family: 'Pacifico', cursive; /* Fun font for headings */
+}
+
+h1 {
+    color: #FF69B4; /* Light pink for the main heading */
+}
+
+h2 {
+    color: #A25092; /* Purple for subheadings */
+}
+
+/* Form Container */
+.recommendation-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: left; /* Align text left for a more organized look */
+}
+
+/* Form Labels and Inputs */
+.form-label {
+    font-family: 'Roboto', sans-serif; /* Professional font for text */
+    color: #A25092; /* Purple for labels */
+}
+
+.form-select {
+    border-radius: 20px;
+    border: 2px solid #A25092;
+    transition: border-color 0.3s ease;
+}
+
+.form-select:focus {
+    border-color: #D8A2B0; /* Slightly lighter purple for focus */
+}
+
+/* Button Styling */
+.btn-pink {
+    background-color: #FF69B4; /* Light pink for button */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-pink:hover {
+    background-color: #FFB6C1; /* Slightly darker pink on hover */
+    transform: scale(1.05);
+}
+
+/* Genre Result Styling */
+#genre-result {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #FF69B4; /* Light pink */
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Playlist Grid */
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding-bottom: 80px; /* Space at the bottom to ensure visibility */
+}
+
+
+/* Playlist Item Styling */
+.playlist-item {
+    display: block;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none; /* Remove default link underline */
+    color: inherit; /* Inherit text color from parent */
+}
+
+.playlist-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.playlist-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif; /* Professional font for text */
+    color: #A25092; /* Purple for playlist titles */
+}
+
+/* Hover effect for playlist items */
+.playlist-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Sign Up Button at the Bottom */
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    padding: 10px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Shadow to distinguish from content */
+    text-align: center;
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+/* Button Styling */
+.btn-pink {
+    background-color: #FF69B4; /* Light pink for button background */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-pink:hover {
+    background-color: #FF1493; /* Darker pink on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+
+.btn-primary {
+    background-color: #FF69B4; /* Light pink */
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #FF1493; /* Darker pink */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Full-screen gradient background */
+.nowplaying {
+    background: linear-gradient(to top, #111011, #90c5f9); /* Soft gradient */
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-image: url(images/clouds.jpg);
+    color: #A25092; /* Purple */
+    border-right: 2px solid #e0c3fc;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sidebar .recommendations {
+    padding: 15px;
+}
+
+.recommendation-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.playlist-title {
+    font-family: 'Pacifico', cursive;
+    color: #FF69B4; /* Light pink */
+}
+
+.genre, .artists, .description {
+    color: #A25092; /* Purple */
+}
+
+/* Main Content */
+.main-content {
+    background: rgba(140, 21, 213, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Song Details */
+.song-details {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.album-art {
+    border-radius: 15px;
+}
+
+.song-title {
+    font-family: 'Pacifico', cursive;
+    color: #FF69B4; /* Light pink */
+}
+
+.song-artist {
+    color: #A25092; /* Purple */
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    position: relative;
+}
+
+.form-range {
+    width: 100%;
+    -webkit-appearance: none;
+    background: #fff;
+}
+
+.form-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #FF69B4; /* Light pink */
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.form-range::-moz-range-thumb {
+    background: #FF69B4; /* Light pink */
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Playback Controls */
+.controls {
+    margin-top: 20px;
+}
+
+.btn-custom {
+    background: #fff; /* White background */
+    border: 2px solid #FF69B4; /* Pink border */
+    color: #FF69B4; /* Light pink text */
+    border-radius: 50%;
+    padding: 15px; /* Larger padding for a bubble effect */
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.btn-custom:hover {
+    background: #FF1493; /* Darker pink on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Playlist Overview */
+.playlist-overview {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.list-group-item {
+    background: rgba(255, 255, 255, 0.8);
+    color: #A25092; /* Purple */
+    border: none; /* Remove default border */
+}
+
+/* Floating Back Button */
+.floating-back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.btn-back {
+    background-color: #FF69B4; /* Light pink */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-back:hover {
+    background-color: #FF1493; /* Darker pink */
+    text-decoration: none;
+}
+
+/* Hide the button initially */
+.d-none {
+    display: none;
+}
